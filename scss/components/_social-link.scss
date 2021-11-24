@@ -7,16 +7,16 @@
   align-items: center;
   justify-content: center;
   transition: background-color 250ms var(--cubic);
-}
 
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: #ffffff;
+  &:hover .social-icon,
+  &:focus .social-icon {
+    fill: #ffffff;
+  }
 }
 
 .social-icon {

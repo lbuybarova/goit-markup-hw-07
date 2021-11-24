@@ -15,11 +15,11 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--cubic);
-}
 
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-tel {
@@ -29,11 +29,11 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--cubic);
-}
 
-.footer-tel:hover,
-.footer-tel:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contacts-adress {
@@ -52,11 +52,11 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   transition: color 250ms var(--cubic);
-}
 
-.address:hover,
-.address:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-container {
@@ -67,6 +67,7 @@
 .footer-contacts {
   margin-right: 70px;
 }
+
 .footer-socials {
   align-items: baseline;
 }
@@ -88,11 +89,12 @@
 .connect-item {
   width: 44px;
   height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
-.connect-item:not(:last-child) {
-  margin-right: 10px;
-}
 .connect-link {
   width: 100%;
   height: 100%;
@@ -102,16 +104,16 @@
   align-items: center;
   justify-content: center;
   transition: background-color 250ms var(--cubic);
-}
 
-.connect-link:hover,
-.connect-link:focus {
-  background-color: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 
-.connect-link:hover .connect-icon,
-.connect-link:focus .connect-icon {
-  fill: #ffffff;
+  &:hover .connect-icon,
+  &:focus .connect-icon {
+    fill: #ffffff;
+  }
 }
 
 .connect-icon {
@@ -126,6 +128,7 @@
 .sign-form {
   display: flex;
 }
+
 .sign-title {
   font-weight: 700;
   font-size: 14px;
@@ -165,12 +168,12 @@
   padding-top: 10px;
   padding-bottom: 10px;
   transition: background-color 250ms var(--cubic);
-}
 
-.sign-button:hover,
-.sign-button:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .sign-icon {

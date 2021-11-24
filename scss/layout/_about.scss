@@ -14,15 +14,16 @@
 .about-list {
   display: flex;
   justify-content: space-evenly;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover .about-picture-text {
+    transform: translateY(0);
+  }
 }
 
-.about-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.about-list-item:hover .about-picture-text {
-  transform: translateY(0);
-}
 .about-list-wrap {
   position: relative;
 }

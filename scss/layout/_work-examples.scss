@@ -10,6 +10,12 @@
   margin-left: 30px;
   margin-bottom: 30px;
   transition: background-color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .work-examples-wrap {
@@ -25,11 +31,6 @@
 
 .work-examples-wrap:hover .work-examples-picture-text {
   transform: translateY(0%);
-}
-.work-examples-item:hover,
-.work-examples-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-examples-picture-text {
@@ -48,6 +49,7 @@
   transform: translateY(100%);
   transition: transform 250ms var(--cubic);
 }
+
 .work-examples-description {
   padding: 20px 24px;
   border: 1px solid #eeeeee;

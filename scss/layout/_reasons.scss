@@ -28,10 +28,10 @@
 
 .reasons-item {
   width: 270px;
-}
 
-.reasons-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .reasons-item-title {

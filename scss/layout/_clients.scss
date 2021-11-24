@@ -21,10 +21,10 @@
 .clients-item {
   width: 170px;
   height: 92px;
-}
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients-link {
@@ -38,16 +38,16 @@
   align-items: center;
   justify-content: center;
   transition: border-color 250ms var(--cubic);
-}
 
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
+  &:hover .clients-icon,
+  &:focus .clients-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .clients-icon {

@@ -6,28 +6,28 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header-nav {
+.main-nav {
   align-items: center;
 }
 
-.header-logo {
+.header__logo {
   margin-right: 93px;
 }
 
-.menu-list {
+.main-nav__list {
   display: flex;
 }
 
-.menu-item:not(:last-child) {
+.main-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.menu-link {
+.main-nav__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -35,13 +35,18 @@
   color: var(--header-color);
   transition: color 250ms var(--cubic);
   position: relative;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .current {
   color: var(--accent-color);
 }
 
-.menu-link.current::after {
+.main-nav__link.current::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -50,11 +55,6 @@
   border-radius: 2px;
   bottom: -32px;
   display: block;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
 }
 
 .header-icon {
@@ -69,20 +69,30 @@
   align-items: center;
 }
 
-.contacts-item:not(:last-child) {
+.contacts-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-tel {
+.header__tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:hover .header-icon,
+  &:focus .header-icon {
+    fill: var(--accent-color);
+  }
 }
 
-.header-tel-link {
+.header__tel-link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -90,39 +100,29 @@
   justify-content: center;
 }
 
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
-}
-
-.header-tel:hover .header-icon,
-.header-tel:focus .header-icon {
-  fill: var(--accent-color);
-}
-
-.header-mail {
+.header__mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:hover .header-icon,
+  &:focus .header-icon {
+    fill: var(--accent-color);
+  }
 }
 
-.header-mail-link {
+.header__mail-link {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.header-mail:hover,
-.header-mail:focus {
-  color: var(--accent-color);
-}
-
-.header-mail:hover .header-icon,
-.header-mail:focus .header-icon {
-  fill: var(--accent-color);
 }
